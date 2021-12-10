@@ -10,20 +10,26 @@
 </head>
 
 <body>
-
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidenavi" class="sidenavi">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="ice.html">Iceland</a>
-        <a href="jp.html">Japan</a>
-        <a href="swe.html">Sweden</a>
-        <a href="vcity.html">Vatican City</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="discover.html">Discover</a>
+        <a href="goals.html">Goals</a>
     </div>
 
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;sidebar</button>
-        <h2>menu</h2>
-        <p>Content...<p>
-    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenavi").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenavi").style.width = "0";
+    }
+
+    </script>
+   
 
     <main>
         <div class="carousel">
@@ -33,7 +39,9 @@
                 <div class="carousel-item">
                     <div class="overlay">
                         <h2 class="text">Start your journey now</h2>
-                        <img style="width: 100%" src="img/hero1.jpg" alt="heroimg" />
+                        <a href="ice.html">
+                        <img style="width: 100%" src="img/iceland-4957449_1920.jpg" alt="heroimg" />
+                        </a>
                     </div>
                 </div>
 
@@ -107,7 +115,7 @@
         </section>
         <section class="row halves">
             <article>
-                <img src="img" alt="">
+                <img src="img/buns.PNG" alt="buns">
             </article>
             <article>
                 <h2>About Place</h2>
@@ -136,12 +144,12 @@
                     voluptas aperiam deleniti officia voluptates quia.</p>
             </article>
             <article>
-                <img src="img" alt="">
+                <img src="img/claire-nolan-lawV2zcEGlE-unsplash.jpg" alt="mountain">
             </article>
         </section>
         <section class="row halves">
             <article>
-                <img src="img" alt="">
+                <img src="img/lake-1112493_1920.jpg" alt="lake">
             </article>
             <article>
                 <h2>Traditions (Redundant)</h2>
@@ -157,34 +165,17 @@
             </article>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h5><i class="fa fa-road"></i> BBGS INC.</h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li><a href="">About</a></li>
-                                <li><a href="">Discover</a></li>
-                                <li><a href="">Visit</a></li>
-                                <li><a href="">Goals</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul>
-                                <li><a href="">Japan</a></li>
-                                <li><a href="">Vatican City</a></li>
-                                <li><a href="">Iceland</a></li>
-                                <li><a href="">Sweden</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Blog</a>
+                <a href="#">Blog</a>
+                <a href="#">Blog</a>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>

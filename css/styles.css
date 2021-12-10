@@ -1,74 +1,260 @@
-/* Don't forget that media queries are required for this project */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
+.sidenavi {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
 
-.mySlides {
-    display: none;
-  }
+.sidenavi a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+.sidenavi a:hover {
+  color: #f1f1f1;
+}
 
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.sidenavi .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px
+}
 
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
 
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightsteelblue;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1
+}
+
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+
+.img-parent1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img-child1{
+  flex-direction: column;
+}
+
+.img-parent2{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.img-child2{
+  flex-direction: column-reverse;
+}
+
+.Nvy-bluebox{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(33, 39, 60);
+  height: 100%;
+}
+
+.lght-bluebox{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(136, 187, 221);
+  height: 100%;
+}
+
+/*image carousel */
+.carousel {
+  height: auto;
+  box-shadow: #21273C;
+}
+.carousel-inner {
+  position: relative;
+   overflow: hidden;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  height: 800px;
+  overflow: hidden; 
+}
+
+.carousel-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(136, 187, 221, 1);
+  color: #aaaaaa;
+}
+
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5{
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+  border: black;
+  border-width: 3px;
+}
+
+.carousel-bullet:hover {
+  color: rgba(136, 187, 221, 1);
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 50000, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+/*About flex*/
+body {
+  background: #f5f5f5;
+  margin: 0;
+  font-size: 16px;
+  font-family: zen antique soft,serif;
+}
+
+img {
+  max-width: 20em;
+  padding: 0.5rem;
+  border: solid 1px darkgrey;}
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+/*ABOUT FLEX*/
+
+.aboutpageboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutpageboxesadditions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
