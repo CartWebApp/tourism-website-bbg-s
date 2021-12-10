@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Iceland</title>
 </head>
-<main>
+    <div id="mySidenavi" class="sidenavi">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="discover.html">Discover</a>
+            <a href="goals.html">Goals</a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenavi").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenavi").style.width = "0";
+        }
+    
+    </script>
+    <main>
     <div class="carousel">
         <div class="carousel-inner">
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
