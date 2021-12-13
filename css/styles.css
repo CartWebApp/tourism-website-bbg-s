@@ -231,11 +231,13 @@ display: block;
 padding:0;
 margin:0;
 }
+
 body
 {
 overflow-x:hidden;
 font-family:'PT Sans', sans-serif;
 }
+
 .section-container
 {
   background-color: #212329;
@@ -245,29 +247,33 @@ display: flex;
 flex-wrap: wrap;
 margin-bottom: 1%;
 }
+
 .section-container .columns
 {
 flex:0 0 auto;
 width:50%;
 }
+
 .section-container .columns.image
 {
 background-position:center;
 background-repeat:no-repeat;
 background-size:cover;
 }
+
 .section-container .columns.content .content-container
 {
 padding: 120px 50px;
 color: white;
 }
+
 .section-container .columns.content .content-container h5
 {
 font-weight:700;
 font-size:55px;
 margin-bottom:20px;
-
 }
+
 .section-container .columns.content .content-container p
 {
   color: white;
