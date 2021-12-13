@@ -234,16 +234,14 @@ body
 overflow-x:hidden;
 font-family:'PT Sans', sans-serif;
 }
-.section-container-1 /* YOU WERE TRYING TO MISMATCH COLORS BY RENAMING DIVS - REMINDER SOLOMON*/
-{
-background-color: blue;
-}
 .section-container
 {
+  background-color: #212329;
 --bs-gutter-x: 1.5rem;
 --bs-gutter-y: 0;
 display: flex;
 flex-wrap: wrap;
+margin-bottom: 1%;
 }
 .section-container .columns
 {
@@ -254,30 +252,35 @@ width:50%;
 {
 background-position:center;
 background-repeat:no-repeat;
-background-size:80%;
+background-size:cover;
 }
 .section-container .columns.content .content-container
 {
-padding:40px 50px;
+padding: 120px 50px;
 }
 .section-container .columns.content .content-container h5
 {
 font-weight:700;
-font-size:25px;
+font-size:55px;
 margin-bottom:20px;
+
 }
 .section-container .columns.content .content-container p
 {
-font-weight:400;
-font-size:16px;
-margin-bottom:20px;
-margin-bottom:15px;
-text-align:justify;
+  font-weight:400;
+  font-size:16px;
+  margin-bottom:20px;
+  margin-bottom:15px;
+  text-align:justify;
 }
+
 /*ABOUT FLEX*/
 
+
+
 .vcityimagesize {
-  max-width: 500px;
+  max-width: 1000px;
+  min-width: 250px;
 }
 
 .aboutpageboxes {
@@ -291,12 +294,11 @@ text-align:justify;
   flex-direction: row;
   justify-content: center;
 }
-
 /*FOOTER*/
 
 * {
-  padding: 0;
-  margin: 0;
+padding: 0;  
+margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -335,7 +337,7 @@ text-align:justify;
 }
 
 .footer-heading a:hover {
-  color: #88BBDD;
+  color: #aaaaaa;
   transition: 0.3s ease-out;
 }
 
@@ -371,7 +373,7 @@ text-align:justify;
 
 #footer-email-btn:hover {
   cursor: pointer;
-  background-color: #88BBDD;
+  background-color: #b1b1b1;
   transition: all 0.4s ease-out;
 }
 
