@@ -119,6 +119,7 @@
 }
 
 .carousel-open:checked + .carousel-item {
+
   position: static;
   opacity: 100;
 }
@@ -175,8 +176,9 @@
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3,
 #carousel-4:checked ~ .control-4,
-#carousel-5:checked ~ .control-5{
-  display: block;
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6{
+display: block;
 }
 
 .carousel-indicators {
@@ -257,6 +259,7 @@ background-size:cover;
 .section-container .columns.content .content-container
 {
 padding: 120px 50px;
+color: white;
 }
 .section-container .columns.content .content-container h5
 {
@@ -267,6 +270,7 @@ margin-bottom:20px;
 }
 .section-container .columns.content .content-container p
 {
+  color: white;
   font-weight:400;
   font-size:16px;
   margin-bottom:20px;
@@ -276,11 +280,9 @@ margin-bottom:20px;
 
 /*ABOUT FLEX*/
 
-
-
 .vcityimagesize {
-  max-width: 1000px;
-  min-width: 250px;
+  width: 750px;
+  margin: 100px;
 }
 
 .aboutpageboxes {
