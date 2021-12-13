@@ -119,8 +119,7 @@
 }
 
 .carousel-open:checked + .carousel-item {
-
-  position: static;
+position: static;
   opacity: 100;
 }
 
