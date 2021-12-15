@@ -226,32 +226,42 @@ display: block;
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
 
 /*About flex*/
-*
-{
+* {
 padding:0;
 margin:0;
 }
-
-body
-{
+body {
 overflow-x:hidden;
 font-family:'PT Sans', sans-serif;
 }
 
-
-.section-container{
+.section-container {
 background-color: rgba(33, 39, 60, 1);
 }
 
-.section-container
-{
+.section-container {
 --bs-gutter-x: 1.5rem;
 --bs-gutter-y: 0;
 display: flex;
 flex-wrap: wrap;
 margin-bottom: 1%;
+margin-top: 1%;
 }
 
 .section-container .columns
@@ -308,12 +318,27 @@ margin-bottom:20px;
 
 .vcityimagesize {
   object-fit: contain;
-  background-size: 150px;
-  width: 600px;
-  height: 400px;
+  background-size: 150px; 
+  width: 70%;
+  position: center;
   border: solid 2px black;
+  margin-left: 17%;
 }
-
+.vcityimagesize-bottom {
+  object-fit: contain;
+  background-size: 150px;
+  width: 40%;
+  height: 40%;
+}
+.vcityimagesizetop {
+  object-fit: contain;
+  background-size: 200px; 
+  width: 90%;
+  position: center;
+  border: solid 2px black;
+  margin-left: 5%;
+}
+  
 .aboutpageboxes {
   display: flex;
   flex-direction: row;
@@ -323,25 +348,26 @@ margin-bottom:20px;
 .aboutpageboxesadditions {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-justify: left;
+
 }
 
 .blueboxesimgandtxt{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  text-justify: left;
   align-items: center;
+  text-align: left;
 }
 
 .container {
-  position: relative;
   text-align: center;
+  position: relative;
   color: white;
 }
 
 .centertextswe {
-  font-size: 40px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -349,24 +375,8 @@ margin-bottom:20px;
 }
 /*BUTTONS*/
 
-.buttonvtc {
-  background-color: rgba(136, 187, 221, 1);
-  border-radius: 10em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2.5rem;
-  color: white;
-  padding: 2em;
-  display: inline-block;
-  text-decoration: none;
-  box-shadow: 0 3px 5px rgb(0 0 0 / 33%);
-  width: 10px;
-  height: 10px;
-}
 
-.buttonlayout {
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+
 
 /*FOOTER*/
 
@@ -475,3 +485,13 @@ margin: 0;
       margin-top: 2rem;
   }
 }
+
+
+
+/*
+
+   ####################
+   #     About Us     #
+   ####################
+
+*/
