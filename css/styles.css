@@ -112,7 +112,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(136, 187, 221);
+  background-color: rgb(33, 39, 60);
   height: 100%;
 }
 
@@ -244,6 +244,7 @@ display: block;
   justify-content: space-around;
   align-items: center;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -332,6 +333,19 @@ margin-bottom:20px;
   text-align: center;
   
 }
+
+/* KRJESJRSTGNOIRES;OURSHTGLKRSGHO;RSH*/
+.titlePage{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+
+
+
+
+
 /*ABOUT FLEX*/
 
 .active {
@@ -394,9 +408,10 @@ margin-bottom:20px;
   margin-right: 50px;
   margin-left: 50px;
   font-size: 20px;
+  color: white;
+
 }
-olor: white;
-.blueboxesimgandtxt{
+.blueboxesimgandtxt {
   display: flex;
   flex-direction: row;
   text-justify: left;
