@@ -10,30 +10,33 @@
 </head>
 
 <body>
-    <div id="mySidenavi" class="sidenavi">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="discover.html">Discover</a>
-        <a href="goals.html">Goals</a>
+    <div class="topimgsetup">
+        <div id="mySidenavi" class="sidenavi">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="discover.html">Discover</a>
+            <a href="goals.html">Goals</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenavi").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenavi").style.width = "0";
+            }
+
+        </script>
+
+        <img class="vcityimagesizetop" src="img/vatican-city-scams-7.jpg">
     </div>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenavi").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenavi").style.width = "0";
-        }
-
-    </script>
-
-
-    <img class="vcityimagesizetop" src="img/vatican-city-scams-7.jpg">
-
+    <br>
+    <br>
     <br>
 
     <div class="aboutpageboxes">
@@ -137,7 +140,7 @@
                 dolore
                 magna aliqua.
             </h4>
-            <img class="vcityimagesize-bottom" src="img/Garden.png">
+            <img class="vcityimagesize-bottomsecond" src="img/Garden.png">
         </div>
         <br>
     </div>

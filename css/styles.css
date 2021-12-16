@@ -66,7 +66,6 @@
   padding: 0px 10px;
 }
 
-
 .img-parent1{
   display: flex;
   flex-direction: row;
@@ -316,6 +315,11 @@ margin-bottom:20px;
 }
 /*ABOUT FLEX*/
 
+.topimgsetup{
+  display: flex;
+  flex-direction: column;
+}
+
 .vcityimagesize {
   object-fit: contain;
   background-size: 150px; 
@@ -329,13 +333,25 @@ margin-bottom:20px;
   width: 60%;
   border: solid 2px black;
   margin: auto;
+  margin-left: 30px;
+}
+
+.vcityimagesize-bottomsecond{
+  object-fit: contain;
+  width: 60%;
+  border: solid 2px black;
+  margin: auto;
+  margin-right: 30px;
 }
 
 .vcityimagesizetop {
   object-fit: contain;
   background-size: 200px; 
-  width: 90%;
+  width: 95%;
   position: center;
+  border: solid 2px black;
+  margin-right: auto;
+  margin-left: auto;
 }
   
 .aboutpageboxes {
