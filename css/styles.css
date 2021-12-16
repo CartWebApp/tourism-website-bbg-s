@@ -322,13 +322,12 @@ margin-bottom:20px;
   width: 70%;
   position: center;
   border: solid 2px black;
-  margin-left: 17%;
 }
 .vcityimagesize-bottom {
   object-fit: contain;
-  background-size: 150px;
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  border: solid 2px black;
+  margin: auto;
 }
 .vcityimagesizetop {
   object-fit: contain;
@@ -337,6 +336,7 @@ margin-bottom:20px;
   position: center;
   border: solid 2px black;
   margin-left: 5%;
+  margin-right: 5%;
 }
   
 .aboutpageboxes {
@@ -349,7 +349,11 @@ margin-bottom:20px;
   display: flex;
   flex-direction: column;
   text-justify: left;
+}
 
+.centertextvcitycentertextvcity {
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .blueboxesimgandtxt{
@@ -373,10 +377,6 @@ margin-bottom:20px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*BUTTONS*/
-
-
-
 
 /*FOOTER*/
 
