@@ -234,6 +234,16 @@ display: block;
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
+#background {
+  height: 80vh;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-image: url(/img/godafoss-1840758_1920.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -408,7 +418,22 @@ margin-bottom:20px;
 }
 
 .backbutton{
+  background-color: rgba(136, 187, 221, 1);
+  border-radius: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5em;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 33%);
+  width: 20%;
+  position: relative;
+  text-align: center;
 justify-content: center;
+align-content: center;
+align-self: center;
+
 }
 /*dropdown button*/
 
