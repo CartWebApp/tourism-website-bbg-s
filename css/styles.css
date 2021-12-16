@@ -348,13 +348,12 @@ margin-bottom:20px;
   background-size: 150px; 
   width: 70%;
   position: center;
-  border: solid 2px black;
 }
 
 .vcityimagesize-bottom {
   object-fit: contain;
   width: 60%;
-  border: solid 2px black;
+  border: solid 2px lightblue;
   margin: auto;
   margin-left: 30px;
 }
@@ -362,7 +361,7 @@ margin-bottom:20px;
 .vcityimagesize-bottomsecond{
   object-fit: contain;
   width: 60%;
-  border: solid 2px black;
+  border: solid 2px darkblue;
   margin: auto;
   margin-right: 30px;
 }
@@ -372,9 +371,9 @@ margin-bottom:20px;
   background-size: 200px; 
   width: 95%;
   position: center;
-  border: solid 2px black;
   margin-right: auto;
   margin-left: auto;
+  background-color: rgb(33, 39, 60);
 }
   
 .aboutpageboxes {
