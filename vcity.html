@@ -10,30 +10,37 @@
 </head>
 
 <body>
-    <div id="mySidenavi" class="sidenavi">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="discover.html">Discover</a>
-        <a href="goals.html">Goals</a>
+    <div class="topimgsetup">
+        <div id="mySidenavi" class="sidenavi">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a class="active">
+            <a href="about.html">About</a>
+            <a href="discover.html">Discover</a>
+            <a href="goals.html">Goals</a>
+            <a href="jp.html">Japan</a>
+            <a href="ice.html">Iceland</a>
+            <a href="swe.html">Sweden</a>
+            <a href="vcity.html">Vatican City</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenavi").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenavi").style.width = "0";
+            }
+
+        </script>
+
+        <img class="vcityimagesizetop" src="img/vatican-city-scams-7.jpg">
     </div>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenavi").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenavi").style.width = "0";
-        }
-
-    </script>
-
-
-    <img class="vcityimagesizetop" src="img/vatican-city-scams-7.jpg">
-
+    <br>
+    <br>
     <br>
 
     <div class="aboutpageboxes">
@@ -114,7 +121,7 @@
     <div class="Nvy-bluebox">
         <br>
         <div class="blueboxesimgandtxt">
-            <h4 class="centertextvcity" style="font-size:1.5vw;">
+            <h4 class="centertextvcitycentertextvcity" style="font-size:1.5vw;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -137,7 +144,7 @@
                 dolore
                 magna aliqua.
             </h4>
-            <img class="vcityimagesize-bottom" src="img/Garden.png">
+            <img class="vcityimagesize-bottomsecond" src="img/Garden.png">
         </div>
         <br>
     </div>
