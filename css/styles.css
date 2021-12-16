@@ -11,6 +11,15 @@
   transition: 0.5s;
 }
 
+.resizetext{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(136, 187, 221);
+  height: 100%;
+}
+
 .sidenavi a{
   padding: 8px 8px 8px 32px;
   text-decoration: none;

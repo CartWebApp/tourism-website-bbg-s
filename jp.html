@@ -10,28 +10,33 @@
 </head>
 
 <body>
-    <div id="mySidenavi" class="sidenavi">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="discover.html">Discover</a>
-        <a href="goals.html">Goals</a>
+    <div class="topimgsetup">
+        <div id="mySidenavi" class="sidenavi">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="discover.html">Discover</a>
+            <a href="goals.html">Goals</a>
+
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenavi").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenavi").style.width = "0";
+            }
+        </script>
+
+        <img class="vcityimagesizetop" src="img/Untitled-4.png">
     </div>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenavi").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenavi").style.width = "0";
-        }
-    </script>
-
     <br>
-
-    <img src="img/Untitled-4.png">
+    <br>
+    <br>
 
     <div class="aboutpageboxes">
         <div>
@@ -73,10 +78,12 @@
         </div>
     </div>
 
+    <br>
+
     <div class="lght-bluebox">
         <div class="blueboxesimgandtxt">
-            <img class="vcityimagesize" src="img/Untitled-2.png" alt="heroimg">
-            <h1  class="centertextvcitycentertextvcity" style="font-size:1.5vw;">
+            <img class="vcityimagesize-bottom" src="img/Untitled-2.png" alt="heroimg">
+            <h1 class="centertextvcitycentertextvcity" style="font-size:1.5vw;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -98,13 +105,15 @@
                 magna aliqua.
             </h1>
         </div>
+        <br>
     </div>
 
     <br>
 
     <div class="Nvy-bluebox">
+        <br>
         <div class="blueboxesimgandtxt">
-            <h4 class="centertextvcity" style="font-size:1.5vw;">
+            <h4 class="centertextvcitycentertextvcity" style="font-size:1.5vw;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -127,7 +136,7 @@
                 dolore
                 magna aliqua.
             </h4>
-            <img class="vcityimagesize" src="img/Untitled-2.png">
+            <img class="vcityimagesize-bottomsecond" src="img/Untitled-2.png">
         </div>
     </div>
 
