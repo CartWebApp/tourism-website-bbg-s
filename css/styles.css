@@ -315,6 +315,10 @@ margin-bottom:20px;
 }
 /*ABOUT FLEX*/
 
+.active {
+  color: blue;
+}
+
 .topimgsetup{
   display: flex;
   flex-direction: column;
