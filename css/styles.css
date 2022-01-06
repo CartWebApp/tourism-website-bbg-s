@@ -341,11 +341,6 @@ margin-bottom:20px;
   font-weight: 100;
 }
 
-
-
-
-
-
 /*ABOUT FLEX*/
 
 .active {
@@ -360,14 +355,14 @@ margin-bottom:20px;
 .vcityimagesize {
   object-fit: contain;
   background-size: 150px; 
-  width: 70%;
+  width: 80%;
   position: center;
 }
 
 .vcityimagesize-bottom {
   object-fit: contain;
   width: 60%;
-  border: solid 2px lightblue;
+  border: solid 2px darkblue;
   margin: auto;
   margin-left: 30px;
 }
@@ -383,7 +378,7 @@ margin-bottom:20px;
 .vcityimagesizetop {
   object-fit: contain;
   background-size: 200px; 
-  width: 95%;
+  width: 100%;
   position: center;
   margin-right: auto;
   margin-left: auto;
@@ -394,7 +389,6 @@ margin-bottom:20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 200px;
   text-align: center;
 }
 
