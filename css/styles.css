@@ -234,11 +234,22 @@ display: block;
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
-#background {
+#background-iceland {
   height: 80vh;
   background-attachment: fixed;
   background-position-x: center;
   background-image: url(/img/iceland_hero_fix.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#background-japan {
+  height: 80vh;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-image: url(/img/japan_hero_fix.jpg);
   background-size: cover;
   display: flex;
   justify-content: space-around;
@@ -344,7 +355,7 @@ margin-bottom:20px;
 /*ABOUT FLEX*/
 
 .active {
-  color: blue;
+  color: #212329;
 }
 
 .topimgsetup{
@@ -359,10 +370,16 @@ margin-bottom:20px;
   position: center;
 }
 
+.vcityresize {
+  width: 100%;
+  height: 100%;
+  background-size: 1000px;
+}
+
 .vcityimagesize-bottom {
   object-fit: contain;
   width: 60%;
-  border: solid 2px darkblue;
+  border: solid 2px #212329;
   margin: auto;
   margin-left: 30px;
 }
@@ -370,7 +387,7 @@ margin-bottom:20px;
 .vcityimagesize-bottomsecond{
   object-fit: contain;
   width: 45%;
-  border: solid 2px darkblue;
+  border: solid 2px #212329;
   margin: auto;
   margin-right: 30px;
 }
