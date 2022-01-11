@@ -345,6 +345,11 @@ margin-bottom:20px;
   
 }
 
+.locations-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* KRJESJRSTGNOIRES;OURSHTGLKRSGHO;RSH*/
 .titlePage{
   text-align: center;
@@ -453,7 +458,7 @@ margin-bottom:20px;
 
 }
 
-.backbutton{
+.backbutton {
   background-color: rgba(136, 187, 221, 1);
   border-radius: 1.5em;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
